@@ -124,5 +124,7 @@ func evalPostfix(expression_postfix []string) (float64, error) {
 }
 
 func main() {
-	fmt.Println(Calc("(3 + 6) * 2 / 0.5"))
+	var expression string
+	fmt.Scanln(&expression)
+	fmt.Println(Calc(expression))
 }
